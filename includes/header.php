@@ -21,7 +21,8 @@ if (function_exists('iniciarSesion')) {
                     <li><a href="<?= BASE_URL ?>private/mis_anuncios.php">Mis Anuncios</a></li>
                     <li><a href="<?= BASE_URL ?>private/crear_anuncio.php">Crear Anuncio</a></li>
                     <li class="usuario-info">
-                        👤 <?= e(getNombreUsuario()) ?>
+                        <?php $usuarioId = getUsuarioId(); ?>
+                        👤 <a href="<?= BASE_URL ?>public/detalle_usuario.php?id=<?= $usuarioId ?>"><?= e(getNombreUsuario()) ?></a>
                     </li>
                     <li><a href="<?= BASE_URL ?>public/logout.php" class="btn-logout">Salir</a></li>
                 <?php else: ?>

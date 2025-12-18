@@ -53,11 +53,6 @@ $anuncios = $stmt->fetchAll();
         <!-- Generado 100% con PHP usando GD Library (secciones 4.1 y 4.2 del documento) -->
         <section class="estadisticas-section">
             <h2>📈 Fotografías subidas en los últimos 7 días</h2>
-            <p class="chart-description">
-                Diagrama generado dinámicamente con <strong>PHP GD Library</strong> usando 
-                <code>imagecreatetruecolor()</code>, <code>imagefilledrectangle()</code>, 
-                <code>imagestring()</code> y el esquema <code>data:</code> con codificación base64.
-            </p>
             
             <div class="chart-gd-container">
                 <!-- Usando esquema data: como se explica en el documento (sección 4.2) -->

@@ -72,7 +72,7 @@ $imagenPrincipal = $anuncio['imagen_principal'] ?: ($fotos[0]['ruta_original'] ?
                 <p class="precio"><?= $anuncio['precio'] !== null ? formatearPrecio($anuncio['precio']) : 'Precio no indicado' ?></p>
                 <p><?= nl2br(e($anuncio['descripcion'])) ?></p>
                 <div class="autor">
-                    <p><strong>Vendedor:</strong> <?= e($anuncio['nombre_completo'] ?: $anuncio['username']) ?></p>
+                    <p><strong>Vendedor:</strong> <a href="<?= BASE_URL ?>public/detalle_usuario.php?id=<?= $anuncio['usuario_id'] ?>" style="color:#007bff;text-decoration:underline;font-weight:bold;"><?= e($anuncio['nombre_completo'] ?: $anuncio['username']) ?></a></p>
                     <p><strong>Contacto:</strong> <?= e($anuncio['email']) ?></p>
                 </div>
             </div>
